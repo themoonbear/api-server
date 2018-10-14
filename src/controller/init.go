@@ -14,18 +14,19 @@ func Init() *echo.Echo {
 	return e
 }
 
-func initMiddleWare(echo *echo.Echo) {
-	echo.Pre(middleware.CORS())
-	echo.Use(middleware.RequestID())
-	echo.Use(middleware.Recover())
+func initMiddleWare(e *echo.Echo) {
+	e.Pre(middleware.CORS())
+	e.Use(middleware.RequestID())
+	e.Use(middleware.Recover())
+	e.Use(middleware.Logger())
 }
 
-func initRouter(echo *echo.Echo) {
-	echo.GET("/proxy/:address", proxy)
+func initRouter(e *echo.Echo) {
+	e.GET("/proxy", proxy)
 }
 
 func proxy(ctx echo.Context) error {
-	address := ctx.Param("address")
+	address := ctx.QueryParam("address")
 	resData := utils.NewResData(ctx)
 	if address == "" {
 		resData.PackError(utils.ErrorParams)
