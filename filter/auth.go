@@ -40,7 +40,7 @@ func AuthRequestWithConfig(config AuthRequestConfig) echo.MiddlewareFunc {
 			if origin != "" && !config.reg.MatchString(origin) {
 				return fmt.Errorf("invalide request: origin(%v)", origin)
 			}
-			if referer != "" && config.reg.MatchString(referer) {
+			if referer != "" && !config.reg.MatchString(referer) {
 				return fmt.Errorf("invalide request: referer(%v)", referer)
 			}
 			// realIP := c.RealIP()
