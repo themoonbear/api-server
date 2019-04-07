@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/themoonbear/api-server/utils"
+	"api-server/utils"
 )
 
 type bilibili struct {

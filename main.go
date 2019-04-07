@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 
-	"github.com/themoonbear/api-server/controller"
+	"api-server/controller"
 )
 
 func main() {

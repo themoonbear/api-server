@@ -1,8 +1,8 @@
 package controller
 
 import (
+	"api-server/utils"
 	"github.com/labstack/echo"
-	"github.com/themoonbear/api-server/utils"
 )
 
 //ResData 返回数据结构体

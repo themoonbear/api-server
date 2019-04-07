@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
+	"api-server/modules/badge"
+	"api-server/utils"
 	"github.com/labstack/echo"
-	"github.com/themoonbear/api-server/modules/badge"
-	"github.com/themoonbear/api-server/utils"
 )
 
 const (

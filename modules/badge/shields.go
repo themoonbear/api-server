@@ -1,7 +1,7 @@
 package badge
 
 import (
-	"github.com/themoonbear/api-server/utils"
+	"api-server/utils"
 )
 
 const (

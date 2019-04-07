@@ -1,9 +1,9 @@
 package controller
 
 import (
+	"api-server/filter"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
-	"github.com/themoonbear/api-server/filter"
 )
 
 // Init 初始化控制器

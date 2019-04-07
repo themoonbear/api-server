@@ -3,8 +3,8 @@ package controller
 import (
 	"net/http"
 
+	"api-server/utils"
 	"github.com/labstack/echo"
-	"github.com/themoonbear/api-server/utils"
 )
 
 type proxyController struct{}

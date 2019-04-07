@@ -3,9 +3,9 @@ package controller
 import (
 	"net/http"
 
+	pm "api-server/modules/danmu"
+	"api-server/utils"
 	"github.com/labstack/echo"
-	pm "github.com/themoonbear/api-server/modules/danmu"
-	"github.com/themoonbear/api-server/utils"
 )
 
 type danmuController struct{}
