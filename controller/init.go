@@ -25,4 +25,5 @@ func initMiddleWare(e *echo.Echo) {
 func initRouter(e *echo.Echo) {
 	new(proxyController).registerRoute(e)
 	new(danmuController).registerRoute(e)
+	new(tjController).registerRoute(e)
 }

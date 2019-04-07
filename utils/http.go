@@ -16,12 +16,6 @@ func getClient() *http.Client {
 }
 
 func setHeader(req *http.Request, header *map[string]string) {
-	// req.Header.Set("Accept-Language", "zh-CN,zh;q=0.8,en;q=0.6")
-	// req.Header.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36")
-	// if ctx != nil {
-	// 	req.Header.Set(echo.HeaderXForwardedFor, ctx.RealIP())
-	// 	req.Header.Set(echo.HeaderXRealIP, ctx.RealIP())
-	// }
 	if header != nil {
 		for k, v := range *header {
 			req.Header.Set(k, v)
