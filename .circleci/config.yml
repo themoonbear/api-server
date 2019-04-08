@@ -10,7 +10,7 @@ jobs:
     steps:
       - checkout
       # specify any bash command here prefixed with `run: `
-      - run: go test -v ./... -race -coverprofile=coverage.txt -covermode=atomic
+      - run: go test -race -coverprofile=coverage.txt -covermode=atomic -v ./...
       - run: bash <(curl -s https://codecov.io/bash) -t df7cff97-4fcd-4e7b-895c-20f66fd5eddc
 workflows:
   version: 2

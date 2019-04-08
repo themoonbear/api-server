@@ -2,6 +2,7 @@ package utils
 
 import (
 	"github.com/patrickmn/go-cache"
+	"time"
 )
 
 var defaultCache *cache.Cache
@@ -29,4 +30,8 @@ func GetCache(key string) (string, bool) {
 	}
 
 	return r, true
+}
+
+func init() {
+	defaultCache = cache.New(time.Hour, time.Hour*2)
 }

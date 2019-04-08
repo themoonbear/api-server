@@ -35,9 +35,9 @@ func AuthRequestWithConfig(config AuthRequestConfig) echo.MiddlewareFunc {
 		return func(c echo.Context) (err error) {
 			origin := c.Request().Header.Get("Origin")
 			referer := c.Request().Header.Get("Referer")
-			if origin == "" && referer == "" {
-				return fmt.Errorf("invalide request: both origin and referer are null")
-			}
+			// if origin == "" && referer == "" {
+			// 	return fmt.Errorf("invalide request: both origin and referer are null")
+			// }
 			if origin != "" && !checkWhileList(origin, &config.whiteList) {
 				return fmt.Errorf("invalide request: origin(%v)", origin)
 			}
