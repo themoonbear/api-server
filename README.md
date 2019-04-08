@@ -1,6 +1,7 @@
 # API 服务器
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/cfd41b89e17142369aa1e9df1bf963bb)](https://app.codacy.com/app/contact_114/api-server?utm_source=github.com&utm_medium=referral&utm_content=themoonbear/api-server&utm_campaign=Badge_Grade_Settings)
+[![CircleCI](https://circleci.com/gh/themoonbear/api-server/tree/master.svg?style=svg)](https://circleci.com/gh/themoonbear/api-server/tree/master)
 
 提供 API 服务
 
