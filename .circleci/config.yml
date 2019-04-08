@@ -11,7 +11,7 @@ jobs:
       - checkout
       # specify any bash command here prefixed with `run: `
       - run: pwd && go test -race -coverprofile=coverage.txt -covermode=atomic -v ./...
-      - run: bash <(curl -s https://codecov.io/bash) -t 'secret:Z/PFiiaF+BZvfwjD9BBZob0j/tedL2QQVJSirFmIY52mqhRt3JlKe393j1Kw6mFDW/M/IqlQx8CmQ0j9lYog/pb1gvimvK3g//aS09cV93Y='
+      - run: bash <(curl -s https://codecov.io/bash)
 workflows:
   version: 2
   build:

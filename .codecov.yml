@@ -1,7 +1,8 @@
 codecov:
   notify:
     require_ci_to_pass: yes
-
+  token: secret:Z/PFiiaF+BZvfwjD9BBZob0j/tedL2QQVJSirFmIY52mqhRt3JlKe393j1Kw6mFDW/M/IqlQx8CmQ0j9lYog/pb1gvimvK3g//aS09cV93Y=
+  
 coverage:
   precision: 2
   round: down
