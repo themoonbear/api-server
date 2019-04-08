@@ -6,7 +6,7 @@ jobs:
   build:
     docker:
       - image: circleci/golang:1.11
-    working_directory: /go/src/github.com/themoonbear/api-server
+    working_directory: /go/api-server
     steps:
       - checkout
       # specify any bash command here prefixed with `run: `
